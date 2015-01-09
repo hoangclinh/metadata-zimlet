@@ -4,6 +4,7 @@ EcoECM Zimlet - Zimlet to intergration with EcoECM
 
 This project provides integration of Zimbra 6,7 to Metadata.vn ( It's based on Alfresco 4.2.c)
 
+
  Features:
  ---------
 
