@@ -1,12 +1,11 @@
 EcoECM Zimlet - Zimlet to intergration with EcoECM
 =============
 
-
 This project provides integration of Zimbra 6,7 to Metadata.vn ( It's based on Alfresco 4.2.c)
 
 
- Features:
- ---------
+Features:
+----------
 
 - Allowing end user to save incoming email attachments to Metadata.vn
 - Allowing end user to select multiple Metadata.vn documents and attach them to outgoing emails.
