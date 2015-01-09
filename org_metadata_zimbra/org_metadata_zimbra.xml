@@ -1,0 +1,48 @@
+
+<zimlet name="org_metadata_zimbra" version="1.0" description="Metadata.vn Integration">
+    <summary>
+        Integration between Metadata.vn and Zimbra CS.
+        For first phase, the integration will allow user to save attachment to metadata.vn.
+        For outgoing emails, user can select documents from metadata.vn and attach them to the outgoing emails.
+        User can also paste the links to metadata.vn documents directly into the email body.
+        
+        This version based on LouiSe'version
+    </summary>
+
+    <include>org_metadata_zimbra.js</include>
+    <include>utilities.js</include>
+    <include>autocomplete-min.js</include>
+    <include>yahoo-min.js</include>
+    <include>event-min.js</include>
+    <include>connection-min.js</include>
+    <include>treeview-min.js</include>
+    <include>AlfNode.js</include>
+    <include>AlfMimeTypes.js</include>
+    <includeCSS>org_metadata_zimbra.css</includeCSS>
+    <includeCSS>treeview.css</includeCSS>
+    <includeCSS>autocomplete.css</includeCSS>
+    <handlerObject>Org_Metadata_Zimbra</handlerObject>
+    <userProperties>
+        <property type="string" name="alfurl" label="${msg.preferencesServer}" maxLength="50" value="https://metadata.vn:443">
+        </property>
+        <property type="string" name="user" label="${msg.preferencesUserName}" maxLength="30" value="">
+        </property>
+        <property type="password" name="password" label="${msg.preferencesPassword}" maxLength="30" value="">
+        </property>
+    </userProperties>
+    <zimletPanelItem label="Metadata.vn" icon="METADATA-panelIcon">
+        <toolTipText>
+            Metadata.vn Integration
+        </toolTipText>
+        <dragSource type="ZmMailMsg" />
+        <contextMenu>
+            <menuItem label="${msg.aboutMenu}" id="AboutMetadata" icon="ABOUT-panelIcon" />
+            <menuItem />
+            <menuItem label="${msg.preferencesMenu}" id="PREFERENCES" icon="CONFIG-panelIcon"/>
+	    <menuItem label="Visit Metadata.vn" id="WWW.METADATA.VN" icon="METADATA-panelIcon">
+				<canvas type="window" title="Metadata.vn Website" width="800" height="600" />
+				<actionUrl target="http://www.metadata.vn" />
+			</menuItem>
+        </contextMenu>
+    </zimletPanelItem>
+</zimlet>
