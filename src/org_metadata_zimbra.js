@@ -17,7 +17,14 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
-
+/**
+ * Orginial author : Yong Qu
+ *
+ * Updated and changed for working with zimbra version 6
+ *
+ * Localization and other fixes by LouiSe@louise.hu
+ * "http://" prefixes removed by LouiSe@louise.hu
+ */
 /* Metadata.vn Integration zimlet object */
 // Constants for web script services
 var ALF_WS_URL_PREFIX = "/alfresco/service";
